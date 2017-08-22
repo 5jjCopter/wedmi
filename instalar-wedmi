@@ -1,0 +1,13 @@
+#!/bin/bash
+# Script para instalar webmin
+# http://www.ubuntufacil.com
+
+wget http://www.webmin.com/jcameron-key.asc
+sudo apt-key add jcameron-key.asc
+rm jcameron-key.asc
+
+sudo echo "" >> /etc/apt/sources.list
+sudo echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
+
+sudo apt-get update
+sudo apt-get install webmin
