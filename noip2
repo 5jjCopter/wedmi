@@ -1,0 +1,12 @@
+#! /bin/bash 
+### BEGIN INIT INFO 
+# Provides: Servicio No-IP 
+# Required-Start: $syslog 
+# Required-Stop: $syslog 
+# Default-Start: 2 3 4 5 
+# Default-Stop: 0 1 6 
+# Short-Description: Arranque automatico para No-IP 
+# Description: 
+# 
+### END INIT INFO 
+sudo /usr/local/bin/noip2 
